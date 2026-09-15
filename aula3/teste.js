@@ -2,8 +2,8 @@
 let hour = 25;
 let greeting;
 if (hour < 18) {
-    greeting = "Good day";
+    greeting = "Good Dgitay";
   }else{
-    greeting = "Good Afternoon"
+    greeting = "Good Night"
   }
 console.log(greeting)
