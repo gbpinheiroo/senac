@@ -1,5 +1,5 @@
 let sinal = prompt("Escreva uma Cor VERDE, AMARELO OU VERMELHO");
-switch (sinal.toLowerCase()) {
+switch (valServico.toLowerCase()) {
   case "verde":
     document.write("SIGA");
     break;
