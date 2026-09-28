@@ -25,10 +25,13 @@ console.log(placasVeiculos.length)
 // Ao final, mostre a quantidade de infrações.
 
 const infracoesTransito = [45, 72, 60, 95, 50, 110, 65]
+let qtd = 0
 
 for (let i = 0; i < infracoesTransito.length; i++) {
     const multa = infracoesTransito[i];
-    if(multa > 70){
-        console.log(`O motorista registrou a velocidade de ${multa}km/h`)
+    if (multa > 70) {
+        qtd++
+        console.log(`O motorista registrou a velocidade de ${multa}km/h,`)
     }
 }
+console.log(`${qtd} motoristas ultrapassaram a velocidade`)
