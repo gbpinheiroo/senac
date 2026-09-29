@@ -31,7 +31,7 @@ for (let i = 0; i < infracoesTransito.length; i++) {
     const multa = infracoesTransito[i];
     if (multa > 70) {
         qtd++
-        console.log(`O motorista registrou a velocidade de ${multa}km/h,`)
+        console.log(`O radar registrou a velocidade de ${multa}km/h`)
     }
 }
-console.log(`${qtd} motoristas ultrapassaram a velocidade`)
+console.log(`${qtd} motoristas ultrapassaram a velocidade.`)
