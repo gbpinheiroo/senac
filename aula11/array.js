@@ -10,14 +10,12 @@ const undEstoque = [
     [10,1,8,5],
 ]
 
-const item;
-const qtd;
+
 
 for (let linha = 0; linha < loja.length; linha++) {
     for (let coluna = 0; coluna < undEstoque[linha].length; coluna++) {
-         item = loja[linha][coluna]
-         qtd = undEstoque[linha][coluna]
+        let item = loja[linha][coluna] + undEstoque[linha][coluna]
     }
     
 }
-console.log(`${item} ${qtd}`)
+console.log(`${item}`)
