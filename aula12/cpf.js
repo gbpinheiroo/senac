@@ -28,5 +28,3 @@ if (segundoDig >= 10) {
 console.log(soma1);
 console.log(primeiroDig);
 console.log(segundoDig);
-
-
