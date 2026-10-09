@@ -1,0 +1,18 @@
+* {
+  text-align: center;
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+
+*:hover{
+    color: blue;
+}
+
+.cabecalho{
+    background-color: aqua;
+}
+
+.rodape{
+    background-color: black;
+    bottom:0in;
+}
