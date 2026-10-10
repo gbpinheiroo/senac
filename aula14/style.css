@@ -1,18 +1,49 @@
 * {
-  text-align: center;
-  color: red;
+  color: navy;
   font-family: "Courier New", Courier, monospace;
+  background-color: f5f5f5;
 }
 
-*:hover{
-    color: blue;
+*:hover {
+  color: brown;
 }
 
-.cabecalho{
-    background-color: aqua;
+/*
+body {
+  background-image: url(assets/img/bck.jfif);
+  background-repeat: no-repeat;
+  background-size: 900px 900px;
+}
+*/
+
+header {
+  background-color: grey;
+  color: white;
 }
 
-.rodape{
-    background-color: black;
-    bottom:0in;
+h1 {
+  font-size: 36px;
+}
+
+#fotopessoal {
+  width: 10%;
+  height: 10%;
+  border: 1px navy solid;
+  border-radius: 100%;
+}
+#fotopessoal:hover {
+  border: 1px red solid;
+}
+
+.rodape {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  background-color: silver;
+  bottom: 0in;
+  color: red;
+}
+
+p.rodape {
+  color: brown;
 }
