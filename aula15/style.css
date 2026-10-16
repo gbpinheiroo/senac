@@ -3,8 +3,8 @@
   font-weight: bolder;
 }
 
-body{
-  background-color: bisque ;
+body {
+  background-color: bisque;
   color: rgb(0, 0, 0);
 }
 
@@ -15,17 +15,29 @@ li {
   list-style-type: none;
 }
 
-.titulo{
-    margin: 20px 20px 0 20px;
-    background-color: white;
-    height: 10%;
-    text-align: left; 
-    display: flex;
-    
+
+
+.titulo {
+  margin: 20px 20px 0 20px;
+  background-color: white;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.titulo h1{
-    margin-left: 15px;
+.titulo h1 {
+  display: flex;
+  align-items: left;
+  text-align: left;
+  margin-left: 2%;
+
+}
+
+#logo {
+  width: 10%;
+  display: right;
+  align-items: right;
+  margin-right: 2%;
 }
 
 a {
@@ -42,31 +54,36 @@ a:active {
   color: black;
 }
 
-#barber-img{
+#barber-img {
   width: 100%;
 }
 
-#rodape{
+#rodape {
   background-color: antiquewhite;
   font-size: 12px;
   text-align: center;
 }
 
-#rodape li{
+#rodape li {
   font-family: Arial, Helvetica, sans-serif;
 }
-#rodape ul{
-  display: inline-block
-}
-
-.menucascata{
-  text-align: center;
-}
-.menucascata li{
+#rodape ul {
   display: inline-block;
 }
 
-#item-galeria{
+.menucascata {
+  text-align: center;
+}
+.menucascata li {
+  display: inline-block;
+}
+
+.galeria{
+  display: flex;
+  align-items: center;
+}
+
+#item-galeria {
   border-radius: 5px;
   width: 30%;
   height: 30%;
@@ -74,32 +91,28 @@ a:active {
   display: inline-flex;
   flex-wrap: nowrap;
   justify-items: center;
-  border: 1px solid ;
+  border: 1px solid;
 }
 
-#item-galeria:hover{
+#item-galeria:hover {
   border: 1px solid cyan;
 }
 
-.textosobreposto p{
+.textosobreposto p {
   margin-top: 30px;
-  margin-left: 30px ;
+  margin-left: 30px;
   width: 40%;
   height: 40%;
-  background-color:blanchedalmond ;
+  background-color: blanchedalmond;
   border-radius: 10px;
   padding: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
-.box-imgtxt{
+.box-imgtxt {
   display: flex;
 }
 
-.textosobreposto{
+.textosobreposto {
   position: absolute;
-}
-
-#logo{
-  width: 10%;
 }
