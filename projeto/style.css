@@ -1,92 +1,119 @@
+html {
+  height: 100%;
+  min-height: 100%;
+}
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: bisque;
-  color: rgb(0, 0, 0);
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 li {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bolder;
   color: black;
   list-style-type: none;
 }
 
+/* ESTILIZÇÃO DE LETRAS */
+a {
+  text-decoration: none;
+  color: red;
+}
 
+a:hover {
+  color: white;
+}
 
+a:active {
+  color: black;
+}
+h1 {
+  color: #ddd;
+}
+
+/* CABEÇALHO DA PAGINA -- NOME E LOGO */
 .titulo {
   margin: 20px 20px 0 20px;
   background-color: white;
   height: 10%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
 .titulo h1 {
-  display: flex;
-  align-items: left;
   text-align: left;
   margin-left: 2%;
-
+  color: #000;
 }
-
 #logo {
-  width: 10%;
-  display: right;
-  align-items: right;
+  width: 25%;
   margin-right: 2%;
 }
 
-a {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-decoration: none;
-  color: navy;
+/* MENU DE NAVEGAÇÃO */
+.menucascata {
+  display: flex;
+  justify-content: center;
+}
+.menucascata ul {
+  display: inline-flex;
+  padding: 0;
+}
+.menucascata li {
+  padding: 2%;
 }
 
-a:hover {
-  color: grey;
+/* BUTÕES DE SELEÇÃO E SUBMIT */
+.buttonSelecao {
+  border-radius: 10%;
+  margin: 2%;
+  padding: 2% 5%;
+  background-color: black;
+  color: #ddd;
 }
 
-a:active {
-  color: black;
+/* BANNER E FRAME */
+#bannerPrincipal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #barber-img {
   width: 100%;
 }
-
-#rodape {
-  background-color: antiquewhite;
-  font-size: 12px;
-  text-align: center;
+.textosobreposto {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+.textosobreposto p {
+  margin: 30px;
+  width: 60%;
+  height: 40%;
+  background-color: white;
+  border-radius: 2%;
+  padding: 10px;
+}
+.box-imgtxt {
+  display: flex;
 }
 
-#rodape li {
-  font-family: Arial, Helvetica, sans-serif;
-}
-#rodape ul {
-  display: inline-block;
-}
-
-.menucascata {
-  text-align: center;
-}
-.menucascata li {
-  display: inline-block;
-}
-
-.galeria{
+/*GALERIA DE FOTOS*/
+.galeria {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
-
 #item-galeria {
   border-radius: 5px;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   margin: 10px 10px 10px 0;
   display: inline-flex;
   flex-wrap: nowrap;
@@ -95,24 +122,64 @@ a:active {
 }
 
 #item-galeria:hover {
-  border: 1px solid cyan;
+  box-shadow: 1px 5px rgba(0, 0, 0, 0.39);
+  transition: all 0.5s;
 }
-
-.textosobreposto p {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 40%;
-  height: 40%;
-  background-color: blanchedalmond;
-  border-radius: 10px;
-  padding: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.box-imgtxt {
+.linhaAtual {
   display: flex;
+  justify-content: center;
 }
 
-.textosobreposto {
-  position: absolute;
+/* TABELA DE VALORES E SERVIÇOS*/
+#tabelaServicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tabelaServicos table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#tabelaServicos td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: white;
+}
+
+#tabelaServicos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tabelaServicos tr:nth-child(odd) {
+  background-color: red;
+}
+#tabelaServicos tr:hover {
+  background-color: #ddd;
+}
+
+#tabelaServicos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+/* RODAPE DA PAGINA*/
+#rodape {
+  display: flex;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 80%;
+  text-align: center;
+  flex-direction: column;
+  margin-top: auto;
+}
+#rodape ul {
+  display: inline-block;
+}
+#rodape li {
+  color: white;
 }
