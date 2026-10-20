@@ -3,6 +3,7 @@ html {
   min-height: 100%;
 }
 * {
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -51,7 +52,7 @@ h1 {
   color: #000;
 }
 #logo {
-  width: 25%;
+  width: 8%;
   margin-right: 2%;
 }
 
@@ -62,11 +63,11 @@ h1 {
 }
 .menucascata ul {
   display: inline-flex;
-  padding: 0;
+  justify-content: center;
+  gap: 10%;
+
 }
-.menucascata li {
-  padding: 2%;
-}
+
 
 /* BUTÕES DE SELEÇÃO E SUBMIT */
 .buttonSelecao {
@@ -85,7 +86,8 @@ h1 {
 }
 
 #barber-img {
-  width: 100%;
+
+  width: 90%;
 }
 .textosobreposto {
   position: absolute;
@@ -102,6 +104,8 @@ h1 {
 }
 .box-imgtxt {
   display: flex;
+  justify-content: center;
+
 }
 
 /*GALERIA DE FOTOS*/
@@ -172,14 +176,21 @@ th {
   display: flex;
   background-color: rgb(54, 54, 54);
   color: white;
-  font-size: 80%;
+  font-size: 12px ;
   text-align: center;
   flex-direction: column;
   margin-top: auto;
 }
 #rodape ul {
-  display: inline-block;
+  padding: 10px;
 }
 #rodape li {
-  color: white;
+  text-align: left;
+  color: white; 
+}
+#rodape nav{
+  display: flex;
+}
+.iconFooter{
+  width: 5%;
 }
