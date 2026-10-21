@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form id="formCadastro">
       <div>
         <label for="name">Nome:</label>
         <input
@@ -16,8 +16,35 @@
           placeholder="Digite seu nome"
         />
       </div>
+
       <div>
-        <label for="name">Sobrenome:</label>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Digite seu email"
+        />
+      </div>
+
+      <button type="reset">APAGAR</button>
+      <button type="submit">ENVIAR</button>
+    </form>
+
+    <script>
+      const formulario = document.getElementById("formCadastro");
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        document.write(`Nome: ${nome} Email: ${email}`);
+      });
+    </script>
+  </body>
+</html>
+<!--
+      <div>
+        <label for="sobrenome">Sobrenome:</label>
         <input
           id="sobrenome"
           name="sobrenome"
@@ -26,26 +53,23 @@
         />
       </div>
       <div>
-        <label for="name">cpf:</label>
+        <label for="cpf">cpf:</label>
         <input
           id="cpf"
           name="cpf "
           type="number"
           pattern="[0-9]{11}"
           title="Digite apenas 11 digitos"
+          placeholder="Digite seu cpf"
         />
       </div>
       <div>
-        <label for="name">Email:</label>
-        <input id="email" name="email" type="email" />
+        <label for="tel">Telefone:</label>
+        <input
+          id="tel"
+          name="tel "
+          type="tel"
+          placeholder="Digite seu telefone"
+        />
       </div>
-
-      <div>
-        <label for="name">Telefone:</label>
-        <input id="tel" name="tel " type="tel" />
-      </div>
-      <button type="reset"></button>
-      <button type="submit"></button>
-    </form>
-  </body>
-</html>
+    -->
