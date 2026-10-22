@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulario</title>
   </head>
   <body>
     <form id="formCadastro">
@@ -25,6 +25,42 @@
           type="email"
           placeholder="Digite seu email"
         />
+      </div>
+
+      <div>
+        <label for="estado">Estado</label>
+        <select id="estado">
+          <option value="">Selecione um Estado</option>
+          <option value="RJ">Rio</option>
+          <option value="SP">Sampa</option>
+          <option value="MG">Minas</option>
+          <option value="ES">Espirito Santo</option>
+        </select>
+      </div>
+      <div>
+        <label for="Sexo">Masculino</label>
+        <input type="radio" id="m" name="gen" value="M" />
+        <label for="Sexo">Feminino</label>
+        <input type="radio" id="f" name="gen" value="F" />
+      </div>
+      <div>
+        <input type="checkbox" name="interesses" id="acao" value="acao">
+        <label for="acao">Ação</label>
+        <input type="checkbox" name="interesses" id="terror" value="acao">
+        <label for="terror">Terror</label>
+        <input type="checkbox" name="interesses" id="comedia" value="acao">
+        <label for="comedia">Comedia</label>
+        </input>
+      </div>
+
+      <div>
+        <label for="cor">Selecione a Cor</label>
+        <input type="color" name="cor" id="cor">
+      </div>
+
+      <div>
+        <label for="texto">Digite um texto:</label><br>
+        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
       </div>
 
       <button type="reset">APAGAR</button>
