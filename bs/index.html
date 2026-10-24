@@ -75,7 +75,7 @@
             <form class="hstack gap-2 d-grid justify-items-end" role="search">
               <button class="btn-solid btn-icon theme-secondary" type="submit">
                 <svg class="bi" width="16" height="16">
-                  <use href="#search" />
+                  <use href="/bootstrap-icons.svg#search" />
                 </svg>
               </button>
             </form>
@@ -85,18 +85,55 @@
     </nav>
     <!-- CONTAINER INICIAL DO SITE -->
     <main class="container-fluid">
-      <section class="container text-center">
+      <section class="container text-center theme-secondary">
         <div class="row">
-          <div class="col-6">
-            <h1>Seu Proximo tenis esta aqui</h1>
-            <p>Conforto, estilo e qualidade para todos os momentos</p>
-            <a href="produtos.html" target="_self" class="btn-solid theme-primary">Ver Produtos</a>
+          <div class="col-6 align-self-center">
+            <div>
+              <h1>Seu Proximo tenis esta aqui</h1>
+              <p>Conforto, estilo e qualidade para todos os momentos</p>
+              <a
+                href="produtos.html"
+                target="_self"
+                class="btn-solid theme-primary"
+                >Ver Produtos</a
+              >
+            </div>
           </div>
           <div class="col-6">
-            <img src="dist/img/tenis.jpg" class="img-fluid" alt="tenis em promoção">
+            <img
+              src="dist/img/tenis.jpg"
+              class="img-fluid rounded"
+              alt="tenis em promoção"
+            />
           </div>
         </div>
       </section>
+      <!-- MENU DE NAVEGAÇÃO SECUNDARIO (PROMOÇÕES E FRETES)-->
+      <main class="container-fluid">
+        <section class="container-flex"></section>
+        <section class="container-fluid">
+          <div class="col-3">
+            <div class="card card-row" style="max-width: 540px">
+              <img
+                src="dist/img/icons-caminhao.png"
+                class="card-img-start"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="fg-2">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </main>
   </body>
 </html>
