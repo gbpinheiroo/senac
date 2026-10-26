@@ -1,139 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
-    />
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script type="module" src="dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <!-- BARRA DE NAVEGAÇÃO -- MENU DO SITE -->
-    <nav class="navbar md:navbar-expand bg-1" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">PAGN</a>
-        <button
-          class="btn-icon navbar-toggler"
-          type="button"
-          data-bs-toggle="drawer"
-          data-bs-target="#navbarDarkDrawer"
-          aria-controls="navbarDarkDrawer"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-        </button>
-        <dialog
-          class="drawer drawer-end"
-          tabindex="-1"
-          id="navbarDarkDrawer"
-          aria-labelledby="navbarDarkDrawerLabel"
-        >
-          <div class="drawer-header">
-            <h5 class="drawer-title" id="navbarDarkDrawerLabel">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="drawer"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="drawer-body mb-2 md:mb-0">
-            <ul class="nav navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <button
-                  class="nav-link"
-                  type="button"
-                  data-bs-toggle="menu"
-                  aria-expanded="false"
-                >
-                  Menu
-                </button>
-                <div class="menu">
-                  <a class="menu-item" href="produtos.html">Produtos</a>
-                  <a class="menu-item" href="#">Fale Conosco</a>
-                  <hr class="menu-divider" />
-                  <a class="menu-item" href="index.html">Retornar ao Inicio</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="hstack gap-2 d-grid justify-items-end" role="search">
-              <button class="btn-solid btn-icon theme-secondary" type="submit">
-                <svg class="bi" width="16" height="16">
-                  <use href="/bootstrap-icons.svg#search" />
-                </svg>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" />
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script type="module" src="dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGAÇÃO -- MENU DO SITE -->
+  <nav class="navbar md:navbar-expand bg-1" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">PAGN</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDarkDrawer"
+        aria-controls="navbarDarkDrawer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarDarkDrawer" aria-labelledby="navbarDarkDrawerLabel">
+        <div class="drawer-header">
+          <h5 class="drawer-title" id="navbarDarkDrawerLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body mb-2 md:mb-0">
+          <ul class="nav navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                Menu
               </button>
-            </form>
-          </div>
-        </dialog>
-      </div>
-    </nav>
-    <!-- CONTAINER INICIAL DO SITE -->
-    <main class="container-fluid">
-      <section class="container text-center theme-secondary">
-        <div class="row">
-          <div class="col-6 align-self-center">
-            <div>
-              <h1>Seu Proximo tenis esta aqui</h1>
-              <p>Conforto, estilo e qualidade para todos os momentos</p>
-              <a
-                href="produtos.html"
-                target="_self"
-                class="btn-solid theme-primary"
-                >Ver Produtos</a
-              >
-            </div>
-          </div>
-          <div class="col-6">
-            <img
-              src="dist/img/tenis.jpg"
-              class="img-fluid rounded"
-              alt="tenis em promoção"
-            />
+              <div class="menu">
+                <a class="menu-item" href="produtos.html">Produtos</a>
+                <a class="menu-item" href="#">Fale Conosco</a>
+                <hr class="menu-divider" />
+                <a class="menu-item" href="index.html">Retornar ao Inicio</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="hstack gap-2 d-grid justify-items-end" role="search">
+            <button class="btn-solid btn-icon theme-secondary" type="submit">
+              <i class="bi bi-search"></i>
+
+            </button>
+          </form>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+  <!-- CONTAINER INICIAL DO SITE -->
+  <main class="container-fluid p-2">
+    <section class="container text-center theme-secondary">
+      <div class="row">
+        <div class="col-6 align-self-center">
+          <div>
+            <h1>Seu Proximo tenis esta aqui</h1>
+            <p>Conforto, estilo e qualidade para todos os momentos</p>
+            <a href="produtos.html" target="_self" class="btn-solid theme-primary">Ver Produtos</a>
           </div>
         </div>
-      </section>
-      <!-- MENU DE NAVEGAÇÃO SECUNDARIO (PROMOÇÕES E FRETES)-->
-      <main class="container-fluid">
-        <section class="container-flex"></section>
-        <section class="container-fluid">
-          <div class="col-3">
-            <div class="card card-row" style="max-width: 540px">
-              <img
-                src="dist/img/icons-caminhao.png"
-                class="card-img-start"
-                alt="..."
-              />
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="fg-2">Last updated 3 mins ago</small>
-                </p>
-              </div>
+        <div class="col-6">
+          <img src="dist/img/tenis.jpg" class="img-fluid rounded" alt="tenis em promoção" />
+        </div>
+      </div>
+    </section>
+    <!-- MENU DE NAVEGAÇÃO SECUNDARIO (PROMOÇÕES E FRETES)-->
+    
+    <section class="container">
+
+      <div class="row">
+
+        <div class="col">
+          <div class="card card-row" style="max-width: 540px;">
+            <img src="dist/img/icons-caminhao.png" class="card-img-start" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="fg-2">Last updated 3 mins ago</small></p>
             </div>
           </div>
-        </section>
-      </main>
-    </main>
-  </body>
+        </div>
+
+        <div class="col">
+          <div class="card card-row" style="max-width: 540px;">
+            <img src="dist/img/icons-caminhao.png" class="card-img-start" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="fg-2">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-row" style="max-width: 540px;">
+            <img src="dist/img/icons-caminhao.png" class="card-img-start" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="fg-2">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+  </main>
+</body>
+
 </html>
