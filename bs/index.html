@@ -14,7 +14,7 @@
 
 <body>
   <!-- BARRA DE NAVEGAÇÃO -- MENU DO SITE -->
-  <nav class="navbar md:navbar-expand bg-1" data-bs-theme="dark">
+  <nav class="navbar md:navbar-expand bg-2" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">PAGN</a>
       <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDarkDrawer"
@@ -59,157 +59,164 @@
     </div>
   </nav>
   <!-- CONTAINER INICIAL DO SITE -->
-  <main class="container-fluid p-5 ">
-    <section class="container text-center theme-secondary">
-      <div class="row">
-        <div class="col-6 align-self-center">
-          <div>
-            <h1>Seu Proximo tenis esta aqui</h1>
-            <p>Conforto, estilo e qualidade para todos os momentos</p>
-            <a href="produtos.html" target="_self" class="btn-solid theme-primary">Ver Produtos</a>
+  <main class="container-fluid px-0">
+    <div class="principal fundoCinza">
+      <section class="container text-center theme-secondary ">
+        <div class="row">
+          <div class="col-6 align-self-center letraCinza">
+            <div>
+              <h1>Seu Proximo tenis esta aqui</h1>
+              <p>Conforto, estilo e qualidade para todos os momentos</p>
+              <a href="produtos.html" target="_self" class="btn-solid theme-secondary">Ver Produtos</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <section class="container">
+              <div id="carouselExampleInterval" class="carousel slide " data-bs-autoplay="true">
+                <div class="carousel-inner rounded-5">
+                  <div class="carousel-item active " data-bs-interval="2000">
+                    <img src="assets/img/t1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/t2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/t3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <button class="btn-icon btn-sm carousel-control-play-pause" type="button"
+                    data-bs-target="#carouselExampleInterval" aria-label="Pause" data-bs-pause-label="Pause"
+                    data-bs-play-label="Play">
+                    <span class="carousel-icon-pause" aria-hidden="true"></span>
+                    <span class="carousel-icon-play" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-        <div class="col-6">
-          <section class="container">
-            <div id="carouselExampleInterval" class="carousel slide " data-bs-autoplay="true">
-              <div class="carousel-inner rounded-5">
-                <div class="carousel-item active " data-bs-interval="2000">
-                  <img src="assets/img/t1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/img/t2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/img/t3.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-                <button class="btn-icon btn-sm carousel-control-play-pause" type="button"
-                  data-bs-target="#carouselExampleInterval" aria-label="Pause" data-bs-pause-label="Pause"
-                  data-bs-play-label="Play">
-                  <span class="carousel-icon-pause" aria-hidden="true"></span>
-                  <span class="carousel-icon-play" aria-hidden="true"></span>
-                </button>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- MENU DE NAVEGAÇÃO SECUNDARIO (PROMOÇÕES E FRETES)-->
 
-    <section class="container p-5">
+    <div class="menuFino">
+      <section class="container">
 
-      <div class="row">
+        <div class="row">
 
-        <div class="col">
-          <div class="card card-row " style="max-width: 540px;">
-            <img src="assets/img/compras.png" class="card-img-start icon-naveg p-2 align-self-center" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Parcele suas compras</h4>
-              <p class="card-text">em até 10x sem juros.</p>
+          <div class="col">
+            <div class="card card-row border-0 fundoCard" style="max-width: 540px;">
+              <img src="assets/img/compras.png" class="card-img-start icon-naveg p-2 align-self-center " alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Parcele suas compras</h4>
+                <p class="card-text">em até 10x sem juros.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card card-row" style="max-width: 540px;">
-            <img src="assets/img/caminhao.png" class="card-img-start icon-naveg p-2 align-self-center" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Frete Gratis</h4>
-              <p class="card-text">para compras acima de R$199,90.</p>
+          <div class="col">
+            <div class="card card-row border-0 fundoCard" style="max-width: 540px;">
+              <img src="assets/img/caminhao.png" class="card-img-start icon-naveg p-2 align-self-center" alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Frete Gratis</h4>
+                <p class="card-text">para compras acima de R$199,90.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card card-row" style="max-width: 540px;">
-            <img src="assets/img/desconto.png" class="card-img-start icon-naveg p-2 align-self-center" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Compra segura</h4>
-              <p class="card-text">e protegida em nosso site.</p>
+          <div class="col">
+            <div class="card card-row border-0 fundoCard" style="max-width: 540px;">
+              <img src="assets/img/desconto.png" class="card-img-start icon-naveg p-2 align-self-center" alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Compra segura</h4>
+                <p class="card-text">e protegida em nosso site.</p>
+              </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-    </section>
+      </section>
+    </div>
 
     <!--DESTAQUES DA SEMANA -->
-    <section class="container">
+    <div class="containerMedio fundoCinza">
+      <section class="container">
 
-      <h2 class="p2">Destaques da semana</h2>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/t1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Air Max Til</h4>
-              <p class="card-text">O melhor tenis que voce vai encontrar em São João de Meriti.</p>
-              <a href="#" class="btn-solid theme-primary">Ver detalhes</a>
+        <h2 class="p2 letraCinza text-center p-10">Destaques da semana</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card fundoCard border-0">
+              <img src="assets/img/t1.jpg" class="card-img-top" alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Air Max Til</h4>
+                <p class="card-text">O melhor tenis que voce vai encontrar em São João de Meriti.</p>
+                <a href="#" class="btn-solid theme-secondary">Ver preço</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/tenis.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Adidas Waguinho</h4>
-              <p class="card-text">O tenis mais bonito e confortavel de Belford Roxo</p>
-              <a href="#" class="btn-solid theme-primary">Ver detalhes</a>
+          <div class="col">
+            <div class="card fundoCard border-0">
+              <img src="assets/img/tenis.jpg" class="card-img-top" alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Adidas Waguinho</h4>
+                <p class="card-text">O tenis mais bonito e confortavel de Belford Roxo</p>
+                <a href="#" class="btn-solid theme-secondary">Ver preço</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/t2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Kolosh Kalango</h4>
-              <p class="card-text">O mais confortavel tenis que voce vai ver hoje na Pavuna</p>
-              <a href="#" class="btn-solid theme-primary">Ver detalhes</a>
+          <div class="col">
+            <div class="card fundoCard border-0">
+              <img src="assets/img/t2.jpg" class="card-img-top" alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Kolosh Kalango</h4>
+                <p class="card-text">O mais confortavel tenis que voce vai ver hoje na Pavuna</p>
+                <a href="#" class="btn-solid theme-secondary">Ver preço</a>
+              </div>
             </div>
-          </div>
 
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/t3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">Mikalce</h4>
-              <p class="card-text">Lançamento incluso lado direito e esquerdo dentro da caixa</p>
-              <a href="#" class="btn-solid theme-primary">Ver detalhes</a>
+          </div>
+          <div class="col">
+            <div class="card fundoCard border-0">
+              <img src="assets/img/t3.jpg" class="card-img-top" alt="...">
+              <div class="card-body border-0 letraCinza">
+                <h4 class="card-title">Mikalce</h4>
+                <p class="card-text">Lançamento incluso lado direito e esquerdo dentro da caixa</p>
+                <a href="#" class="btn-solid theme-secondary">Ver preço</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
 
   </main>
 
   <!--RODAPE DA PAGINA-->
-  <footer class="container">
-    <div class="row">
-      <div class="col-10">
-        <h2>TENIS MANIA</h2>
-        <span>2026 Tenis Mania - Todos os Direitos reservados</span>
-      </div>
+  <footer class="bg-black fg-white">
+    <div class="footer container letraCinza">
+      <div class="row">
+        <div class="col-10">
+          <h2>TENIS MANIA</h2>
+          <span>2026 Tenis Mania - Todos os Direitos reservados</span>
+        </div>
 
-      <div class="col-2">
-        <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="height: 100%;">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-whatsapp"></i>
+        <div class="col-2">
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="height: 100%;">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
         </div>
       </div>
     </div>

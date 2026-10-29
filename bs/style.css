@@ -1,10 +1,27 @@
-
-
 .promoCard {
      max-width: 540px;
      border: none;
 }
-.icon-naveg{
+
+.icon-naveg {
      max-width: 75px;
      max-height: 75px;
-     }
+}
+
+.fundoCinza {
+
+
+     background-color: #1E2022;
+}
+
+.fundoCard {
+     background-color: #2D3035;
+}
+
+.letraCinza {
+     color: #8A949F;
+}
+
+.menuFino {
+     background-color: #2D3035;
+}
