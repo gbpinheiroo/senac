@@ -20,17 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)l$py@54(miuv*bk4su1+qxk^%j($o#d@3jg@o)u6ch=2mv@md'
+SECRET_KEY = 'django-insecure-kpfk1_fs*47jjpp+p7l12sk(81vk$3gy^m4tp32-!v66__uq39'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Opção 1: Permitir explicitamente os endereços locais mais comuns
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
-
-# Opção 2 (Recomendada para desenvolvimento): Permitir qualquer endereço temporariamente
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -42,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'alunos'
 ]
 
 MIDDLEWARE = [
