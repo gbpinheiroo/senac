@@ -1,0 +1,69 @@
+{% extends 'alunos/base.html' %}
+{% load static %}
+{% block title %}
+Início | Portal de Cursos
+{% endblock %}
+
+
+{% block content %}
+
+<section class="container-fluid banner py-5">
+  <div class="text-center p-5 ">
+    <h1>Aprenda hoje. Construa novas oportunidades</h1>
+    <p class="lead mb-0">
+      Consulte os cursos disponiveis e faça sua inscrição de forma simples
+    </p>
+    <a class="btn btn-primary mt-5" href="{% url 'alunos:cursos' %}">Ver cursos disponiveis</a>
+  </div>
+</section>
+
+<!--SEÇÃO DE CURSOS MAIS POPULARES-->
+<section class="container-fluid py-5 bg-1">
+  <h2>Cursos mais populares</h2>
+  <div class="container">
+
+    <div class="row row-cols-1 md:row-cols-3 g-4 py-3">
+      {% for curso in cursos %}
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">{{ curso.titulo }}</h4>
+            <p class="card-text">{{ curso.carga_horaria }} </p>
+          </div>
+        </div>
+      </div>
+      {% empty %} 
+
+      <p>Sem cursos disponiveis</p>
+      
+      {% endfor %}
+
+      
+    </div>
+  </div>
+</section>
+
+<!--SEÇÃO SOBRE-->
+<section class="container-fluid py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center d-flex flex-column align-items-center justify-content-center">
+        <!--TEXTO SOBRE-->
+        <h2>SOBRE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident architecto labore voluptatem
+          deserunt at laudantium ipsa odio veritatis earum ad natus id ducimus neque, vel iste eaque repudiandae quidem?
+        </p>
+        <a class="btn btn-primary mt-5" href="{% url 'alunos:sobre' %}">Saber mais</a>
+
+      </div>
+      <div class="col">
+        <!--IMAGEM-->
+        <img src="{% static 'alunos/img/logo.jpg' %}" class="img-fluid mx-auto d-block roundec" width="300" >
+
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

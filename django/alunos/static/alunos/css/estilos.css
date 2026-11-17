@@ -1,0 +1,12 @@
+body {
+    background-color: #fff;
+    color: #000000;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+}

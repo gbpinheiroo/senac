@@ -1,18 +1,31 @@
-# alunos/views.py​
-
 from django.shortcuts import render
-
+from django.http import HttpResponse
+# Create your views here.
 
 def inicio(request):
-    return render(request, "alunos/index.html")
+       lista_cursos = [
+        {'titulo': 'Python para Web', 'carga_horaria': 40, 'categoria':'TI'},
+        {'titulo': 'Django Essencial', 'carga_horaria': 32, 'categoria':'TI'},
+        {'titulo': 'Banco de Dados', 'carga_horaria': 24, 'categoria':'TI'},
+        {'titulo': 'Folha de Pagamento', 'carga_horaria': 24, 'categoria':''},
+    ]
+  
+       contexto = {'cursos': lista_cursos}
 
+       return render(request,'alunos/inicio.html',contexto)
 
 def cursos(request):
-    lista_cursos = [
-        {"titulo": "Python para Web", "carga_horaria": 40},
-        {"titulo": "Django Essencial", "carga_horaria": 32},
-        {"titulo": "Banco de Dados", "carga_horaria": 24},
+   lista_cursos = [
+        {'titulo': 'Python para Web', 'carga_horaria': 40, 'categoria':'TI'},
+        {'titulo': 'Django Essencial', 'carga_horaria': 32, 'categoria':'TI'},
+        {'titulo': 'Banco de Dados', 'carga_horaria': 24, 'categoria':'TI'},
+        {'titulo': 'Folha de Pagamento', 'carga_horaria': 24, 'categoria':''},
     ]
-    contexto = {"cursos": lista_cursos}
+  
+   contexto = {'cursos': lista_cursos}
+   
+   return render(request, 'alunos/cursos.html', contexto)
 
-    return render(request, "alunos/cursos.html", contexto)
+
+def sobre(request):
+    return render(request, 'alunos/sobre.html')
