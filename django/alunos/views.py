@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Curso
 # Create your views here.
+
 
 def inicio(request):
        lista_cursos = [
@@ -9,7 +11,7 @@ def inicio(request):
         {'titulo': 'Banco de Dados', 'carga_horaria': 24, 'categoria':'TI'},
         {'titulo': 'Folha de Pagamento', 'carga_horaria': 24, 'categoria':''},
     ]
-  
+       lista_cursos = Curso.objects.order_by("titulos")
        contexto = {'cursos': lista_cursos}
 
        return render(request,'alunos/inicio.html',contexto)

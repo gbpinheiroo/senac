@@ -1,12 +1,79 @@
-body {
-    background-color: #fff;
-    color: #000000;
-}
+body { 
+    background-color: #f5f7fb; 
+  } 
+  
+  .navbar { 
+    background-color: #081a3a; 
+  } 
+  
+  .banner { 
+    background: linear-gradient(135deg, #123b7a, #351c75); 
+    color: #ffffff; 
+    padding: 60px 0; 
+    text-align: center; 
+  } 
+  
+  .card { 
+    background-color: #ffffff; 
+    color: #172033; 
+    border: 1px solid #dce3ee; 
+    border-radius: 14px; 
+    overflow: hidden; 
+    box-shadow: 0 6px 18px rgba(8, 26, 58, 0.08); 
+    transition: 
+      transform 0.2s ease, 
+      box-shadow 0.2s ease; 
+  } 
+  
+  .card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 28px rgba(8, 26, 58, 0.16); 
+  } 
+  
+  .card-img-top { 
+    height: 180px; 
+    object-fit: cover; 
+  } 
+  
+  .card-title { 
+    color: #081a3a; 
+    font-weight: 700; 
+  } 
+  
+  .card-text { 
+    color: #64748b; 
+  } 
+  
+  .card .btn { 
+    background-color: #1746a2; 
+    color: #ffffff; 
+    border: none; 
+  } 
+  
+  .card .btn:hover { 
+    background-color: #6d28d9; 
+    color: #ffffff; 
+  } 
+  
+  /* seção de cursos */ 
+  .secao-cursos { 
+    background-color: #f3f6fb; 
+    color: #172033; 
+  } 
+  
+  /* seção sobre */ 
+  .secao-sobre { 
+    background-color: #ffffff; 
+    color: #172033; 
+  } 
+  
+  /* footer */ 
+  footer { 
+    background-color: #081a3a; 
+    color: #e2e8f0; 
+  }
 
-.card {
-    transition: transform 0.2s ease;
-}
-
-.card:hover{
-    transform: translateY(-4px);
-}
+  .inicio-sobre{
+    color: black;
+  }
+  
